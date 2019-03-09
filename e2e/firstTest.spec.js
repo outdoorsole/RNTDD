@@ -3,8 +3,7 @@ describe('Example', () => {
     await device.reloadReactNative();
   });
 
-  it('should show the welcome message', async () => {
+  it('should have welcome screen', async () => {
     await expect(element(by.id('welcome'))).toBeVisible();
   });
 });
-
