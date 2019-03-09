@@ -7,11 +7,18 @@
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 
-import React, {Component} from 'react';
-import {Platform, View} from 'react-native';
+import React, { Component } from 'react';
+import {
+  View
+} from 'react-native';
+import RestaurantList from './RestaurantList';
 
 export default class App extends Component {
   render() {
-    return <View></View>;
+    return (
+      <View>
+        <RestaurantList />
+      </View>
+    );
   }
 }
