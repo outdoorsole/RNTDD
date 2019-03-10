@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   View,
   TextInput,
+  Button,
 } from 'react-native';
 
 export default class AddRestaurantModal extends Component {
@@ -11,11 +12,15 @@ export default class AddRestaurantModal extends Component {
     if (!visible) {
       return null;
     }
-    
+
     return (
       <View>
         <TextInput
           testID="restaurantNameTextField"
+        />
+        <Button
+          testID="saveRestaurantButton"
+          title="Save Restaurant"
         />
       </View>
     );

@@ -10,6 +10,10 @@ export default class RestaurantList extends Component {
     isAddModalVisible: false,
   }
 
+  showAddRestaurantModal = () => {
+    this.setState({ isAddModalVisible: true });
+  }
+
   render() {
     const { isAddModalVisible } = this.state;
 
@@ -17,7 +21,8 @@ export default class RestaurantList extends Component {
       <View>
         <Button
           title="New Restaurant"
-          testID="newRestaurantButton"        
+          testID="newRestaurantButton"
+          onPress={this.showAddRestaurantModal}
         />
         <AddRestaurantModal
           visible={isAddModalVisible}
