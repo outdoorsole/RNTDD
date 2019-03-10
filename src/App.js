@@ -9,14 +9,24 @@
 
 import React, { Component } from 'react';
 import {
-  View
+  View,
+  StyleSheet,
 } from 'react-native';
 import RestaurantList from './RestaurantList';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FFF',
+  },
+});
 
 export default class App extends Component {
   render() {
     return (
-      <View>
+      <View
+        style={styles.container}
+      >
         <RestaurantList />
       </View>
     );
